@@ -1,9 +1,7 @@
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:outline_gradient_button/outline_gradient_button.dart';
 import 'package:slinkshot_test/components/bottom-bar.dart';
 import 'package:slinkshot_test/components/profile-pic.dart';
-import 'package:slinkshot_test/components/profile-videos.dart';
 import 'package:slinkshot_test/components/user-data.dart';
 import 'package:slinkshot_test/components/video-data-icons.dart';
 import 'package:slinkshot_test/utility/constants.dart';
@@ -150,6 +148,8 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
               ),
             ])),
+            ///if the gridview is selected, show the videos as a grid,
+            ///otherwise, show them as in the home page
             gridSelected
                 ? SliverGrid(
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
