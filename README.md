@@ -2,15 +2,6 @@
 
 A test app recreating the home page and profile page on Slinkshot
 
-## Getting Started
+The home page works as intended. It's comprised of a row of buttons that filter categories on top, a switch between clips and lives (not implemented) and a PageView with a placeholder (here a static color) and info about the user and the video.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The profile page is almost perfect. The profile picture is in a Hero widget, and below it there are info, a follow button, a tip and a chat button, and a grid/list switch, to change how the clips are shown. The gridView works as intended, whereas I had some problems implementing a PageView in a SliverList, so it doesn't snap as intended.
